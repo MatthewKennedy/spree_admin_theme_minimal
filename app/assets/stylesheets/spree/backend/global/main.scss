@@ -1,0 +1,58 @@
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {
+
+  aside#main-sidebar {
+    background-color: white;
+    border-color: white;
+
+    ul.nav-sidebar {
+      background-color: white;
+      border-color: transparent !important;
+
+      li.sidebar-menu-item ul {
+        border-color: transparent !important;
+      }
+    }
+
+    ul.active-option {
+      background-color: white;
+    }
+  }
+
+  img#logo {
+    filter: invert(64%);
+  }
+
+  main#main-part {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  div#contentHeader {
+    padding-top: 15px;
+    padding-bottom: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+  }
+
+  button#accountNav {
+    display: none;
+  }
+
+  .header .navbar {
+    background-color: white;
+    display: flex !important;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .header .navbar {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+}
