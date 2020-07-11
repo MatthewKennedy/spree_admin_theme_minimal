@@ -1,3 +1,7 @@
+button.navbar-toggler {
+  border-color: transparent !important;
+}
+
 @include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {}
 @include media-breakpoint-up(lg) {

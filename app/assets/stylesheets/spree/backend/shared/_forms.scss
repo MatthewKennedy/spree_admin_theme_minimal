@@ -1,0 +1,47 @@
+label {
+  font-size: $font-size-sm;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+span.or {
+  @extend label;
+
+  padding: 0 10px;
+}
+
+.form-group {
+  &.withError {
+    label, .formError, .required {
+      color: $danger;
+    }
+
+    input,
+    .select2-choice {
+      border-color: $danger;
+    }
+  }
+}
+
+// Hide number toggler
+/* Chrome, Safari, Edge, Opera */
+input.hide-number-toggle::-webkit-outer-spin-button,
+input.hide-number-toggle::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number].hide-number-toggle {
+  -moz-appearance: textfield;
+}
+
+.input-group >
+.input-group-append:not(:last-child) >
+.force-round {
+  z-index: 5;
+  border-top-right-radius: $border-radius !important;
+  border-bottom-right-radius: $border-radius !important;
+}
