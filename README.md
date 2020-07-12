@@ -1,6 +1,6 @@
 # SpreeAdminThemeMinimal
 
-Introduction goes here.
+Work In Progress for New Spree Admin in 4.2
 
 ## Installation
 
